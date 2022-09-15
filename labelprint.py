@@ -30,7 +30,7 @@ label = label.rotate(270, expand=1)
 datamatrix = treepoem.generate_barcode(
     barcode_type = 'datamatrix',
     data = datamatrix_data,
-).resize((datamatrix_width, datamatrix_width), resample=Image.NEAREST).rotate(270)
+).resize((datamatrix_width, datamatrix_width), resample=Image.Resampling.NEAREST).rotate(270)
 
 label.paste(datamatrix)
 
