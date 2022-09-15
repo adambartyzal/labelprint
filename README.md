@@ -2,6 +2,8 @@
 
 Since I haven't found any reasonable way to use broher p-touch software on linux with Brother P-Touch P750W printer, with help of [this](http://www.odorik.cz/w/ptouch) ruby code I've written a python utility for printing labels.
 
+Works also with Brother P-touch PT-E550W
+
 ## Dependencies
 - python 3+
 - [pillow](https://pypi.org/project/Pillow/) - for text to image conversion
