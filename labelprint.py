@@ -3,11 +3,11 @@ import treepoem
 from PIL import Image, ImageDraw, ImageFont
 
 if (len(sys.argv) < 3):
-  print(f'Usage: python {sys.argv[0]} text_to_print path_to_printer [custom_datamatrix_data]')
+  print(f'Usage: python {sys.argv[0]} path_to_printer text_to_print [custom_datamatrix_data]')
   exit()
 
-text = sys.argv[1]
-printer = sys.argv[2]
+printer = sys.argv[1]
+text = sys.argv[2]
 datamatrix_data = sys.argv[3] if (len(sys.argv) == 4) else text
 
 label_height = 64
